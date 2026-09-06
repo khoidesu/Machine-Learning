@@ -54,12 +54,35 @@ Trong bài này, chúng ta sẽ sử dụng bộ dữ liệu: https://huggingfac
 
 ### Work flow
 
-hi
+```
+Import data
+    |
+Discover data
+    |
+Split category
+    |
+Encode category
+    |
+Split data (80% train, 20% test)
+    |
+K-means, KNN, Decision Tree, Naive Bayes train and test accuracy
+```
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Report
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Accuracy với mỗi thuật toán
+| | K-means | KNN | Decision Tree | Naive Bayes |
+|--------------------|---------|------|---------------|-------------|
+| BoW | 0.56 | 0.56 | 0.61 | 0.58 |
+| IF-IDS | 0.58 | 0.83 | 0.58 | 0.83 |
+| Sentence Embedding | 0.87 | 0.89 | 0.72 | 0.89 |
+
+Nhận xét:
+
+- BoW: Decision tree cho accuracy tốt nhất
+- IF-IDS: KNN, Naive Bayes cho accuracy tốt nhất
+- Sentence Embedding: KNN, Naive Bayes cho accuracy tốt nhất
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
